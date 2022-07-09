@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.19.0"],\
             ["eslint-config-next", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:12.2.0"],\
             ["next", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:12.2.0"],\
+            ["normalize.css", "npm:8.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
@@ -2185,11 +2186,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.19.0"],\
             ["eslint-config-next", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:12.2.0"],\
             ["next", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:12.2.0"],\
+            ["normalize.css", "npm:8.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:0aca5d8cbdf9f611ea11ddcba397bfb2ef86ccb4c5e25d48c14539b057357dee27b27451d828b391c45e2a208b7d6e8490c58d64054ba4ea935777c19b52afe0#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["normalize.css", [\
+        ["npm:8.0.1", {\
+          "packageLocation": "./.yarn/cache/normalize.css-npm-8.0.1-6124fb39b6-4698cae88e.zip/node_modules/normalize.css/",\
+          "packageDependencies": [\
+            ["normalize.css", "npm:8.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["object-assign", [\
