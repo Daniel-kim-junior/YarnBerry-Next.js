@@ -1,19 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import conn from "../../lib/db";
+import { QueryResult } from "pg";
 
 type Data = {
   name: string;
 };
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<any[]>) {
   const query = "SELECT * from post";
   const postDB = await conn.connect();
   try {
-    return new Promise((resolve, rejects) => {});
+    const rst = await postDB.query(query);
+    res.json(rst.rows);
   } catch {
-    res.status(500).end();
-  } finally {
-    postDB.release();
+    throw new Error();
   }
 }
