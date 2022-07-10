@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import conn from "../../lib/db";
-import { QueryResult } from "pg";
+
 
 type Data = {
   name: string;
