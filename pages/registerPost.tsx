@@ -1,5 +1,11 @@
+import Form from "../components/common/Form";
+
 function registerPost() {
-  return;
+  return (
+    <>
+      <Form />
+    </>
+  );
 }
 
 export default registerPost;
