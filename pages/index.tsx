@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import PostList from "../components/PostList";
+import PostList from "../components/Post/PostList";
 const dummy = [
   {
     id: 1,
