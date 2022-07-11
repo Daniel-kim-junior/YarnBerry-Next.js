@@ -1,11 +1,16 @@
-import Form from "../components/common/Form";
+import { useState } from "react";
+import { Modal } from "../components/ui/Modal";
 
-function registerPost() {
+function RegisterPost() {
+  const [modal, setModal] = useState(false);
   return (
     <>
-      <Form />
+      <button onClick={() => setModal(true)}>모달</button>
+      {modal && (
+        <Modal width="200px" height="200px" element={<div>최초의 모달</div>} setModal={setModal} />
+      )}
     </>
   );
 }
 
-export default registerPost;
+export default RegisterPost;
