@@ -14,7 +14,8 @@ export default function RegisterItem(): JSX.Element {
     </>
   );
 }
-
+// flex grow는 일정 비율을 가지게 하고 싶을 때 쓰는 flex속성
+// flex grow , flex shrink , flex-basis
 const MainSection = styled.section`
   display: flex;
   flex-direction: column;
