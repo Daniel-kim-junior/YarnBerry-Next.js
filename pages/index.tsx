@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import Link from "next/link";
 import PostList from "../components/Post/PostList";
 const dummy = [
   {
@@ -10,7 +10,7 @@ const dummy = [
 ];
 
 function HomePage() {
-  return <PostList posts={dummy} />;
+  return <Link href="/registerPost">글 등록하기</Link>;
 }
 
 export default HomePage;

@@ -4,16 +4,17 @@ import RegisterItem from "../components/RegisterPost/RegisterItem";
 import styled from "styled-components";
 
 function RegisterPost(): JSX.Element {
-  const [modal, setModal] = useState(true);
   return (
     <Main>
-      {modal && <Modal width="100%" height="100%" element={RegisterItem} setModal={setModal} />}
+      <RegisterItem />
     </Main>
   );
 }
 
 const Main = styled.main`
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   min-height: 100vh;
   min-width: 100vw;
   position: relative;

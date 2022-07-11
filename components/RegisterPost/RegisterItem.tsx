@@ -4,35 +4,33 @@ import PreViewPost from "./PreViewPost";
 
 export default function RegisterItem(): JSX.Element {
   return (
-    <Container>
+    <>
       <MainSection>
         <MainPost />
       </MainSection>
       <PrevSection>
         <PreViewPost />
       </PrevSection>
-    </Container>
+    </>
   );
 }
 
-const Container = styled.div`
+const MainSection = styled.section`
   display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-`;
-
-const MainSection = styled.div`
-  display: flex;
+  flex-direction: column;
   background-color: #121212;
-  position: absolute;
-  width: 50%;
-  height: 100%;
+  position: relative;
+  min-width: 0px;
+  z-index: 1;
+  flex: 1 1 0%;
 `;
 
-const PrevSection = styled.div`
+const PrevSection = styled.section`
   display: flex;
+  flex-direction: column;
   background-color: #0c0c0c;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  min-width: 0px;
+  flex: 1 1 0%;
+  position: relative;
 `;
