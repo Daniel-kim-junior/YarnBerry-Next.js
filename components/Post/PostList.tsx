@@ -1,4 +1,5 @@
 import PostItem from "./PostItem";
+
 export interface Post {
   id: number;
   title: string;
