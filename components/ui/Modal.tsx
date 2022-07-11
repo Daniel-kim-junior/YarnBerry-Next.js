@@ -12,31 +12,24 @@ export function Modal({ width, height, element, setModal }: ModalProps): JSX.Ele
   const modalOff = () => {
     setModal(false);
   };
+  const View = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ${width};
+    height: ${height};
+    position: absolute;
+  `;
+
   const Element = element;
   return (
     <>
-      <View width={width} height={height}>
-        <Wrapper>
-          <div className="exit-wrapper" onClick={modalOff}>
-            &times;
-          </div>
-          <Element />
-        </Wrapper>
+      <View>
+        <Element />
       </View>
       <Canvas onClick={modalOff} />
     </>
   );
 }
 
-const View = styled.section<{ width: string; height: string }>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 100vh;
-`;
-const Wrapper = styled.div`
-  position: absolute;
-  background-color: #c8d6e5;
-`;
 const Canvas = styled.div``;
