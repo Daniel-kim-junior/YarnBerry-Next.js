@@ -2290,6 +2290,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-jest@npm:^6.5.9":
+  version: 6.5.9
+  resolution: "@storybook/addon-jest@npm:6.5.9"
+  dependencies:
+    "@storybook/addons": 6.5.9
+    "@storybook/api": 6.5.9
+    "@storybook/client-logger": 6.5.9
+    "@storybook/components": 6.5.9
+    "@storybook/core-events": 6.5.9
+    "@storybook/theming": 6.5.9
+    core-js: ^3.8.2
+    global: ^4.4.0
+    react-sizeme: ^3.0.1
+    regenerator-runtime: ^0.13.7
+    upath: ^1.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 17b32eda9ddc14e78be5abd25be5c50e4cbe05b23acece42e3e1ed749c1cd4bb8c51f62ec4de775c3db86d7651f0737b632b726e3ba341bee52e71dd00bdc972
+  languageName: node
+  linkType: hard
+
 "@storybook/addons@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/addons@npm:6.5.9"
@@ -4858,6 +4885,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"batch-processor@npm:1.0.0":
+  version: 1.0.0
+  resolution: "batch-processor@npm:1.0.0"
+  checksum: 5519b024f6cd0e95a543bb3edf0ae19e5badae0c32b30b41839b4469bbb1f91e14fc04bff3759cd9c2621aa9e16def48c938783e9027e7ec977fba62d537a468
+  languageName: node
+  linkType: hard
+
 "better-opn@npm:^2.1.1":
   version: 2.1.1
   resolution: "better-opn@npm:2.1.1"
@@ -6590,6 +6624,15 @@ __metadata:
   version: 1.4.185
   resolution: "electron-to-chromium@npm:1.4.185"
   checksum: 1d079d8a4c4f6a228eeab0023462ce419ce811ed698d91d5ca7cfbf61d9cc5297c7a1ba97d312fda5411d3c9b379d7c0e8af31b14b7c143c0213ce22681b761d
+  languageName: node
+  linkType: hard
+
+"element-resize-detector@npm:^1.2.2":
+  version: 1.2.4
+  resolution: "element-resize-detector@npm:1.2.4"
+  dependencies:
+    batch-processor: 1.0.0
+  checksum: 81c47b7e229c303889d3a9d78ec3f3232e88a6682f1e2424fb0632d9b4f503b2ca011e6954321060604da07749a5a972b6a175fdf6c6806093a3b80a304cde7b
   languageName: node
   linkType: hard
 
@@ -8728,6 +8771,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"invariant@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "invariant@npm:2.2.4"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
+  languageName: node
+  linkType: hard
+
 "ip@npm:^1.1.5":
   version: 1.1.8
   resolution: "ip@npm:1.1.8"
@@ -10186,7 +10238,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.0.0, loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -10936,6 +10988,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next@workspace:."
   dependencies:
+    "@storybook/addon-jest": ^6.5.9
     "@storybook/react": ^6.5.9
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
@@ -12513,6 +12566,18 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: 112178a05b1e0ffeaf5d9fb4e56b4410a34a73adeb04dbf13abdc50d9ac9df2ada83e81485156cca0b3fa296aa3612751b3d6cd13be4464642a43679b819cbc7
+  languageName: node
+  linkType: hard
+
+"react-sizeme@npm:^3.0.1":
+  version: 3.0.2
+  resolution: "react-sizeme@npm:3.0.2"
+  dependencies:
+    element-resize-detector: ^1.2.2
+    invariant: ^2.2.4
+    shallowequal: ^1.1.0
+    throttle-debounce: ^3.0.1
+  checksum: 97cb852c24bbd50acb310da89df564e0d069415f6635676dae3d3bdc583ece88090c0f2ee88a6b0dc36d2793af4a11e83bf6bbb41b86225dd0cf338e8f7e8552
   languageName: node
   linkType: hard
 
@@ -14153,6 +14218,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"throttle-debounce@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "throttle-debounce@npm:3.0.1"
+  checksum: e34ef638e8df3a9154249101b68afcbf2652a139c803415ef8a2f6a8bc577bcd4d79e4bb914ad3cd206523ac78b9fb7e80885bfa049f64fbb1927f99d98b5736
+  languageName: node
+  linkType: hard
+
 "through2@npm:^2.0.0":
   version: 2.0.5
   resolution: "through2@npm:2.0.5"
@@ -14675,7 +14747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"upath@npm:^1.1.1":
+"upath@npm:^1.1.1, upath@npm:^1.2.0":
   version: 1.2.0
   resolution: "upath@npm:1.2.0"
   checksum: 4c05c094797cb733193a0784774dbea5b1889d502fc9f0572164177e185e4a59ba7099bf0b0adf945b232e2ac60363f9bf18aac9b2206fb99cbef971a8455445
