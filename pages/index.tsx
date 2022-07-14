@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styled from "styled-components";
 import PostList from "../components/Post/PostList";
 const dummy = [
   {
@@ -10,7 +11,16 @@ const dummy = [
 ];
 
 function HomePage() {
-  return <Link href="/registerPost">글 등록하기</Link>;
+  return (
+    <>
+      <Link href="/registerPost">글 등록하기</Link>
+      <StyleDiv>하이</StyleDiv>
+    </>
+  );
 }
+
+export const StyleDiv = styled.div`
+  color: purple;
+`;
 
 export default HomePage;
