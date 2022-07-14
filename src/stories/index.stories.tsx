@@ -1,5 +1,4 @@
-import { withTests } from "@storybook/addon-jest";
-import HomePage from "../pages/index";
+import HomePage from "../../pages/index";
 export default {
   title: "MyComponent",
 };

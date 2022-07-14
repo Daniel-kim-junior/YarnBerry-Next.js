@@ -23,4 +23,5 @@ export const StyleDiv = styled.div`
   color: purple;
 `;
 
+
 export default HomePage;
